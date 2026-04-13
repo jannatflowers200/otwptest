@@ -241,10 +241,12 @@ width: 106px;
 .practivetop{
     background-image: url(../images/herofooter.png);
     min-height: 382px;
+    background-size: cover;
 }
 .practivebottom{
     background-image: url(../images/herofooter2.png);
     min-height: 372px;
+     background-size: cover;
 }
 
 .practice{
@@ -316,3 +318,155 @@ float: left;
     background-size: cover;
 }
 /* END YOUR CSS HERE */
+
+/* 768px screen */
+@media screen and  (max-width: 768px) and (min-width: 480px)  {
+  .header{
+width:98%;
+text-align: center;
+display: block;
+
+ }
+ .headerleft{
+width: 100%;
+ }
+ .headerriht{
+width: 100%;
+ }
+ .herobtton{
+margin-left: 200px;
+margin-bottom: 50px;
+ }
+ .heroImage img{
+    width: 100%;
+    display: block;
+ }
+.herobottom{
+    width: 98%;
+    display: block;
+}
+.herobottom{
+    margin: 0px auto;
+    text-align: center;
+}
+.practice {
+    padding-bottom:700px;
+}
+.heroleft {
+   width:77%;
+   margin: 0px 90px;
+}
+
+.heroright{
+   order: -1;
+   width:92%;
+}
+
+.practivebottom{
+min-height: 240px;
+}
+.doctortop {
+    width: 77%;
+}
+  .servivebottom{
+width:98%;
+text-align: center;
+display: block;
+
+ }
+ .serviveleft{
+width:92%;
+padding-top: 77px;
+ }
+ .serviveRight{
+width: 71%;
+margin: 30px 115px;
+text-align: center;
+ }
+ .servicebody{
+    text-align: center;
+ }
+ .servicebtn{
+    margin-left: 150px;
+ }
+ .serviveRight h3,.servicebody{
+    text-align: center;
+ }
+}
+
+
+@media screen and  (max-width: 480px) and (min-width: 320px)  {
+  .header{
+width:100%;
+text-align: center;
+
+ }
+ .headerleft{
+width: 100%;
+ }
+ .herp .pre-header{
+    font-size: 15px;
+ }
+ .headerriht{
+width: 100%;
+ }
+ .herobtton{
+margin-left: 3px;
+margin-bottom: 50px;
+ }
+ .heroImage img{
+    width: 100%;
+    display: block;
+ }
+.herobottom{
+    width: 98%;
+    display: block;
+}
+.herobottom{
+    margin: 0px auto;
+    text-align: center;
+}
+.practice {
+    padding-bottom:700px;
+}
+.heroleft {
+   width:77%;
+   margin: 0px 90px;
+}
+
+.heroright{
+   order: -1;
+   width:92%;
+}
+
+.practivebottom{
+min-height: 240px;
+}
+.doctortop {
+    width: 77%;
+}
+  .servivebottom{
+width:98%;
+text-align: center;
+display: block;
+
+ }
+ .serviveleft{
+width:92%;
+padding-top: 77px;
+ }
+ .serviveRight{
+width: 71%;
+margin: 30px 115px;
+text-align: center;
+ }
+ .servicebody{
+    text-align: center;
+ }
+ .servicebtn{
+    margin-left: 150px;
+ }
+ .serviveRight h3,.servicebody{
+    text-align: center;
+ }
+}
