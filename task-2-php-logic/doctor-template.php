@@ -134,9 +134,30 @@ $doctors = [
 
         IMPORTANT: Escape ALL dynamic output!
     -->
+<!-- <?php print_r($doctors); ?> -->
+<?php  foreach ($doctors as $doctor) :?>
+<div class="doctor-card">
+    <!-- <img src="https://placehold.co/640x565" alt="Dr. Sarah Mitchell"> -->
+     <img
+     src=<?=   esc_url($doctor['photo_url']);?>
+     alt=<?= esc_html($doctor['attr'] ?? 'No Attribute'); ?>
+     
+     >
 
-
-
+    <!-- <h3>Dr. Sarah Mitchell</h3> -->
+    <h3><?= esc_html($doctor['name'])?></h3>
+    <p class="specialty"> <?= esc_html($doctor['specialty'])?></p>
+    <p class="experience"><?= esc_html($doctor['experience'])?></p>
+    <p class="bio"> <?= esc_html($doctor['bio'])?></p></p>
+    <ul class="credentials">
+        <li><?= esc_html($doctor['credentials'])?></li>
+        <!-- <li>DDS — University of Michigan School of Dentistry</li>
+        <li>Board Certified Orthodontist</li>
+        <li>Invisalign Diamond Provider</li>
+        <li>Member, American Association of Orthodontists</li> -->
+    </ul>
+</div>
+<?php endforeach; ?>
     <!-- END YOUR PHP LOOP HERE -->
 
 </section>
