@@ -20,7 +20,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-   
+
 }
 
 img {
@@ -149,13 +149,17 @@ ul, ol {
 /* START YOUR CSS HERE */
 
 .header{
-    width: var(--container-width);
-    display: inline-flex;
+
+    
     
 }
 .leftSection{
-    width: 50%;
+    width: 49%;
     color: var(--color-preHeader);
+    float: left;
+}
+.heroImage{
+    width: 48%;
 }
 .title{
     color: var(--color-title);
@@ -163,6 +167,7 @@ ul, ol {
     font-weight: 600;
     font-size: 48px;
     line-height: 68px;
+
 }
 .body1{
     color: #030712;
@@ -186,9 +191,7 @@ ul, ol {
   
     cursor: pointer;
 }
-.heroImage{
-    width: 50%;
-}
+
 
 /* herofooter start  */
 .herofooter{
@@ -224,5 +227,50 @@ width: 106px;
 .step3{
       background-image: url(../images/Subtract3.png);
      
+}
+
+/* practicestart  */
+.practice{
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+.practicetop h3{
+color: var(--color-white);
+}
+.practicetop h2{
+color: var(--color-secondary);
+}
+.imageCausal{
+    width: 20%;
+   
+    display: inline-block;
+    
+}
+.imcaru1{
+ border-bottom-left-radius:50px;
+}
+.imcaru4{
+    border-top-right-radius:50px;
+}
+.herobottom{
+display: inline-flex;
+gap: var(--gap-lg);
+width: 85%;
+}
+.heroleft{
+width: 50%;
+float: left;
+}
+.heroleft p{
+    text-align: left;
+}
+.heroright{
+    float: right;
+    width: 40%;
+}
+.practicebtn{
+    background-color:#2CD080;
+    border: #2CD080;
 }
 /* END YOUR CSS HERE */
