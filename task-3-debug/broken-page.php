@@ -128,8 +128,8 @@ $testimonials = [
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1><?php echo $practice_info['name']; ?></h1>
-        <p><?php echo $practice_info['tagline']; ?></p>
+        <h1><?php echo  esc_html($practice_info['name']); ?></h1>
+        <p><?php echo esc_html($practice_info['tagline']); ?></p>
     </section>
 
     <!-- Services Section -->
@@ -138,7 +138,7 @@ $testimonials = [
         <div class="services-grid">
             <?php foreach ($services as $service) { ?>
                 <div class="service-card">
-                    <div class="icon"><?php echo $service['icon']; ?></div>
+                    <div class="icon"><?php echo htmlspecialchars ($service['icon']); ?></div>
                     <h3><?php echo htmlspecialchars($service['title']); ?></h3>
                     <p><?php echo htmlspecialchars($service['desc']); ?></p>
                 </div>
@@ -168,8 +168,8 @@ $testimonials = [
     <footer style="background: #333; color: white; padding: 40px 20px; text-align: center;">
         <p><?php echo htmlspecialchars($practice_info['name']); ?></p>
         <p><?php echo htmlspecialchars($practice_info['address']); ?> | <?php echo $practice_info['phone']; ?></p>
-        <p>&copy; <?php echo date('Y'); ?> All rights reserved.</p>
+        <p>&copy; <?php echo esc_html(date('Y') ); ?> All rights reserved.</p>
     </footer>
 
 </body>
-</htm>
+ </html>
