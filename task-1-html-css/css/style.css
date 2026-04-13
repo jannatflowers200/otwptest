@@ -147,20 +147,24 @@ ul, ol {
    ============================================ */
 
 /* START YOUR CSS HERE */
-
-.header{
-
+/* .container{
+    width: 90%;
     
-    
-}
-.leftSection{
-    width: 49%;
-    color: var(--color-preHeader);
-    float: left;
-}
-.heroImage{
-    width: 48%;
-}
+} */
+ .header{
+width: 100%;
+min-height: 80px;
+padding: 20px 70px;
+display: inline-flex;
+gap: var(--gap-2xl);
+ }
+ .headerleft{
+width: 63%;
+ }
+ .headerriht{
+width: 40%;
+ }
+
 .title{
     color: var(--color-title);
     font-family: var(--font-heading);
@@ -226,12 +230,23 @@ width: 106px;
 }
 .step3{
       background-image: url(../images/Subtract3.png);
+      
      
 }
 
+
+
 /* practicestart  */
+.practivetop{
+    background-image: url(../images/herofooter.png);
+    min-height: 382px;
+}
+.practivebottom{
+    background-image: url(../images/herofooter2.png);
+    min-height: 372px;
+}
 .practice{
-    background-color: var(--color-primary);
+    background-color:#0A5D2E;
     text-align: center;
 }
 
@@ -255,8 +270,8 @@ color: var(--color-secondary);
 }
 .herobottom{
 display: inline-flex;
-gap: var(--gap-lg);
-width: 85%;
+gap: var(--gap-2xl);
+width: 90%;
 }
 .heroleft{
 width: 50%;
@@ -272,5 +287,20 @@ float: left;
 .practicebtn{
     background-color:#2CD080;
     border: #2CD080;
+}
+.doctortop{
+    width: 60%;
+    margin:0px auto;
+}
+.doctor{
+    background-color: #FFFFFF;
+}
+.hero h3{
+    color: #00BC4D;
+}
+.herobottombg{
+    background-image: url(../images/Wave3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* END YOUR CSS HERE */
