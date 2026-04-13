@@ -149,13 +149,19 @@ $doctors = [
     <p class="specialty"> <?= esc_html($doctor['specialty'])?></p>
     <p class="experience"><?= esc_html($doctor['experience'])?></p>
     <p class="bio"> <?= esc_html($doctor['bio'])?></p></p>
-    <ul class="credentials">
-        <li><?= esc_html($doctor['credentials'])?></li>
-        <!-- <li>DDS — University of Michigan School of Dentistry</li>
-        <li>Board Certified Orthodontist</li>
-        <li>Invisalign Diamond Provider</li>
-        <li>Member, American Association of Orthodontists</li> -->
-    </ul>
+
+   
+
+    <?php if(!empty($doctor['credentials'])):?>
+<ul>
+    <?php   foreach($doctor['credentials'] as $credential):?>
+    <li> <?= esc_html($credential)?></li>
+
+    <?php endforeach; ?>
+</ul>
+
+ <?php endif; ?>
+   
 </div>
 <?php endforeach; ?>
     <!-- END YOUR PHP LOOP HERE -->
