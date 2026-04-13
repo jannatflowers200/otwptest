@@ -20,6 +20,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+   
 }
 
 img {
@@ -52,13 +53,18 @@ ul, ol {
 
     /* Colors — inspect the Figma color palette to get exact hex values */
     /* TODO: Fill in the exact colors from the Figma file */
-    --color-primary: #______;      /* Main brand color (inspect from Figma) */
-    --color-secondary: #______;    /* Secondary color (inspect from Figma) */
-    --color-accent: #______;       /* Accent/highlight color (inspect from Figma) */
-    --color-text: #______;         /* Main text color (inspect from Figma) */
+    --color-primary: #00BC4D;      /* Main brand color (inspect from Figma) */
+    --color-secondary: #EC9F05;    /* Secondary color (inspect from Figma) */
+    --color-accent: #2CD080;       /* Accent/highlight color (inspect from Figma) */
+    --color-text: #030712;         /* Main text color (inspect from Figma) */
     --color-text-light: #______;   /* Light/muted text (inspect from Figma) */
+    --color-btnhover: #cdc1c1;   /* Light/muted text (inspect from Figma) */
     --color-white: #FFFFFF;
-    --color-bg-light: #______;     /* Light background sections (inspect from Figma) */
+    --color-bg-light: ;     /* Light background sections (inspect from Figma) */
+    --color-bg-black: #0000;     /* Light background sections (inspect from Figma) */
+    --color-preHeader: #0A5D2E;
+    --color-title: #95440B;
+         /* Light background sections (inspect from Figma) */
 
     /* Spacing */
     --container-width: 1240px;
@@ -142,6 +148,81 @@ ul, ol {
 
 /* START YOUR CSS HERE */
 
+.header{
+    width: var(--container-width);
+    display: inline-flex;
+    
+}
+.leftSection{
+    width: 50%;
+    color: var(--color-preHeader);
+}
+.title{
+    color: var(--color-title);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 68px;
+}
+.body1{
+    color: #030712;
+   padding: 60px 0px;
+}
+.herobtton{
+  background-color: #030712;
+  color: var(--color-white);
+  display: flex;
+  gap: var(--gap-lg);
+  border-radius: var(--radius-full);
+  padding-left: 13px;
+  line-height: 45px;
+}
+.herobtton i img{
+    line-height: 30px;
+}
+.herobtton:hover{
+    transition: var(--transition);
+    background-color: var(--color-btnhover);
+  
+    cursor: pointer;
+}
+.heroImage{
+    width: 50%;
+}
 
+/* herofooter start  */
+.herofooter{
+    background-image: url(../images/herofooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.payment{
+    gap: var(--gap-lg);
+    width: var(--container-width);
+    align-items: center;
 
+}
+.step1{
+    width: 33%;
+    display: inline-flex;
+    background-image: url(../images/Subtract.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+gap: var(--gap-lg);
+padding: var(--section-padding);
+}
+.paymentdescription, .paymentdescription2,.paymentdescription3{
+color: var(--color-text);
+text-transform: uppercase;
+width: 106px;
+}
+.step2{
+      background-image: url(../images/Subtract2.png);
+   
+}
+.step3{
+      background-image: url(../images/Subtract3.png);
+     
+}
 /* END YOUR CSS HERE */
