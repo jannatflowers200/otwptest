@@ -20,7 +20,7 @@
 // Simulated data
 $practice_info = [
     'name'    => 'Sunshine Dental Clinic',
-    'tagline' => 'Your Smile, Our Priority <script>alert("hacked")</script>',
+    'tagline' => 'Your Smile, Our Priority <h1>alert("hacked")</h1>',
     'phone'   => '(555) 123-4567',
     'address' => '123 Main Street, Suite 200',
 ];
@@ -52,7 +52,10 @@ $testimonials = [
             padding: 80px 20px;
             text-align: center;
         }
-        .hero h1 { font-family: 'Quicksand', sans-serif; font-size: 48px; margin-bottom: 16px; }
+        :root {
+           --font-familyall: 'Quicksand', sans-serif; 
+        }
+        .hero h1 { font-family:var(--font-familyall); font-size: 48px; margin-bottom: 16px; }
         .hero p { font-size: 20px; }
 
         .services {
@@ -62,7 +65,7 @@ $testimonials = [
         }
         .services h2 {
             text-align: center;
-            font-family: 'Quicksand', sans-serif;
+           font-family:var(--font-familyall);
             font-size: 36px;
             margin-bottom: 40px;
         }
@@ -79,7 +82,7 @@ $testimonials = [
             width: 300px;
         }
         .service-card .icon { font-size: 48px; margin-bottom: 16px; }
-        .service-card h3 { font-family: 'Quicksand', sans-serif; margin-bottom: 8px; }
+        .service-card h3 { font-family:var(--font-familyall); margin-bottom: 8px; }
 
         .testimonials {
             background: #f0f7fa;
@@ -87,7 +90,7 @@ $testimonials = [
         }
         .testimonials h2 {
             text-align: center;
-            font-family: 'Quicksand', sans-serif;
+            font-family:var(--font-familyall);
             font-size: 36px;
             margin-bottom: 40px;
         }
