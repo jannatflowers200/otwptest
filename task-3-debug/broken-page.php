@@ -41,7 +41,7 @@ $testimonials = [
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $practice_info['name']; ?></title>
+    <title><?php echo htmlspecialchars($practice_info['name']); ?></title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Lato', sans-serif; color: #333; }
@@ -128,8 +128,8 @@ $testimonials = [
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1><?php echo  esc_html($practice_info['name']); ?></h1>
-        <p><?php echo esc_html($practice_info['tagline']); ?></p>
+        <h1><?php echo  htmlspecialchars($practice_info['name']); ?></h1>
+        <p><?php echo htmlspecialchars($practice_info['tagline']); ?></p>
     </section>
 
     <!-- Services Section -->
@@ -150,17 +150,18 @@ $testimonials = [
     <section class="testimonials">
         <h2>What Our Patients Say</h2>
         <div class="testimonial-grid">
-            <?php foreach ($testimonials as $testimonial) { ?>
+            <?php foreach ($testimonials as $testimonial): ?>
                 <div class="testimonial-card">
                     <div class="stars">
-                        <?php for ($i = 0; $i <= $testimonial['rating']; $i++) { ?>
+                        <?php for ($i = 0; $i< $testimonial['rating']; $i++):?>
                             ★
-                        <?php } ?>
+                         <?php endfor; ?>
                     </div>
+                   
                     <p>"<?php echo htmlspecialchars($testimonial['text']); ?>"</p>
                     <strong>— <?php echo htmlspecialchars($testimonial['name']); ?></strong>
                 </div>
-            <?php } ?>
+            <?php endforeach;?>
         </div>
     </section>
 
@@ -168,7 +169,7 @@ $testimonials = [
     <footer style="background: #333; color: white; padding: 40px 20px; text-align: center;">
         <p><?php echo htmlspecialchars($practice_info['name']); ?></p>
         <p><?php echo htmlspecialchars($practice_info['address']); ?> | <?php echo $practice_info['phone']; ?></p>
-        <p>&copy; <?php echo esc_html(date('Y') ); ?> All rights reserved.</p>
+        <p>&copy; <?php echo htmlspecialchars(date('Y') ); ?> All rights reserved.</p>
     </footer>
 
 </body>
